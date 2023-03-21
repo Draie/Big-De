@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Big De</title>
+    <link href="C:\Users\Audrey\OneDrive\Personnel\ORDI PORTABLE\STUDI\SITE\jeu\jeu-de-d\Style\home.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/58da166b81.js" crossorigin="anonymous"></script>
+    <script src="C:\Users\Audrey\OneDrive\Personnel\ORDI PORTABLE\STUDI\SITE\jeu\jeu-de-d\Script\De_Tools.js"></script>
+    
+
+<link rel="icon" type="image/png" sizes="192x192" href="C:\Users\Audrey\OneDrive\Personnel\ORDI PORTABLE\STUDI\SITE\jeu\jeu-de-d\IMG\FAV ICON\favicon.ico">
+
+  </head>
+  <body>
+   
+    <div class="container" >
+
+        <img src="C:\Users\Audrey\OneDrive\Personnel\ORDI PORTABLE\STUDI\SITE\jeu\jeu-de-d\IMG\bigDe.png" alt="herobanner">
+        <div class="logContainer">
+
+            <form action="game.html" method="POST">
+
+                <div class="logcase" >
+                    <h1 class="login">A vous de jouer !</h1>
+                    <div class="userC">
+                        <i class="fa-solid fa-shield-halved"></i>
+                        <label class="log" for="username">Player 1</label>
+                        <input  onchange="listener()" class="player1"type="text" id="player1home" name="name"required >
+
+                             <i class="fa-solid fa-shield-halved"></i>
+                             <label class="log" for="username">Player 2</label>
+                             <input onchange="listener()" class="player2" type="text" id="player2home" name="name"required>
+                    </div>
+                    <button onclick="userValidation()" id="seconnecter"class="seconnecter">Start </button ">
+                </div>
+
+            </form>
+        </div>
+
+    </div>
+
+    <img id="soundNote" onclick="playSound()" src="C:\Users\Audrey\OneDrive\Personnel\ORDI PORTABLE\STUDI\SITE\jeu\jeu-de-d\IMG\icons8-musical-notes-90-removebg-preview.png" alt="sound on" width="40px" height="40px">
+    
+ 
+  </body>
+</html>
+

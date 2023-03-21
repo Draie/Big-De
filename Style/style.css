@@ -1,0 +1,559 @@
+*{
+    padding: 0;
+    margin:0;
+    font-family: 'Lato', sans-serif;
+
+}
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+    background-color:#ECF2FF;
+    display: grid;
+   font-family:'Josefin Sans', sans-serif;
+   
+
+   
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*--------------CODE START--------------------------------*/
+
+
+ header{ 
+    display: grid;
+    grid-template-rows: 70px 60px 2fr;
+    row-gap: 3rem;
+   
+
+ }
+
+
+                #newGameTittle{
+
+                display: flex;
+                align-items: center;
+                font-weight: 100;
+                justify-content: center;
+                font-weight:bolder;
+                margin-top:1rem ;
+            
+            
+                }
+
+                #newGameTittle img{
+                    width: 25px;
+                    height: 25px;
+                    margin: 1rem;
+                    cursor: pointer;
+                   
+                }
+                #newGame-btn{
+                    padding: 6px;
+                    cursor: pointer;
+
+
+                }
+                    #newGame-btn:hover{
+                        background-color: #3E54AC;
+                        color: #FFF;
+                     
+                        border-radius: 6px;
+
+                    }
+               
+
+                    .playerTittle{
+                        display: flex;
+                        justify-content: center;
+                        text-align: center;
+                        font-weight: bolder;
+                        gap: 5rem;
+                        font-size: 20px;
+                  
+
+            }
+            .userS{
+              margin-left:30px;
+              margin-top: 1rem;
+              font-weight: lighter;
+              font-size: 15px;
+              color: #3E54AC;
+              text-align: center;
+              padding: 6px;
+              opacity: 0.5;
+              font-family: 'Dosis', sans-serif;
+
+              
+            }
+            .userS:hover{
+                color: white;
+                background-color: #3E54AC ;
+                border-radius: 10px;
+                
+            }
+            .playerOne{
+                display: flex;
+                flex-direction: column;
+              
+            }
+            .playerTwo{
+                display: flex;
+                flex-direction: column;
+        
+   
+           
+            }
+
+             
+
+    main{
+        display: grid;
+       grid-template-rows: 1fr;
+      
+        justify-content: center;
+        align-items: center;
+
+    }
+
+                .scorePlayer-container{
+                    display: grid;
+                    font-size:40px;
+                    padding-top: 2rem;
+             
+                }
+
+    
+
+                #StatusIcon1{
+                    width: 19px;
+                    height:19px;
+                    visibility: hidden;
+                    opacity: 0.6;
+                }
+              
+                    
+
+                #StatusIcon2{
+                    width: 19px;
+                    height:19px;
+                    visibility: hidden;
+                    opacity: 0.6;
+                }
+
+                .holdS{
+                    background-color: #3E54AC;
+                    color: white;
+                    padding: 15px;
+                 
+                    font-weight: bolder;
+                    border-radius: 10px;
+                    max-width:60px;
+                    max-height: 40px;
+                    align-self: center;
+                    text-align: center;
+                  
+                }
+
+                .scorePlayer-container{
+                    display: flex;
+                    justify-content: space-around;
+                }
+                 .scorePlayer1{
+                   
+                   padding-top: 15px;
+                    width: 250px;
+                    height: 100px;
+                 
+
+                    }
+                        
+                    .Dimage{
+                        justify-self: center;
+                         box-shadow: -12px -1px 98px -5px rgba(138,132,132,0.26);
+                         box-sizing: content-box;
+                         max-width: 100px;
+                         height: 100px;
+                         background-color: #ECF2FF;
+                         
+                      }
+
+                      .Dimage img{
+                        transition: 3s;
+                         transform: rotate(360deg);
+                         border-radius: 15px;
+                         background-color: #ECF2FF;
+
+                      }
+                            
+                    .scorePlayer2{
+                        padding-top: 15px;
+                        width: 250px;
+                        height: 100px;
+                     
+                    }
+
+
+                    .currentGame_main{
+
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: center;
+                        padding-top: 5rem;
+                        gap:8rem;
+                        font-size: 15px;
+                    }
+
+                    .currentS{
+                        background-color:#BFACE2;
+                        padding: 10px;
+                        text-align: center;
+                        border-radius: 10px;
+                        font-weight: bolder;
+                        justify-content: center;
+                        align-self: center;
+                        color: #FFF;
+                        font-size: 20px;
+                        color: #3E54AC;
+                     
+
+                        
+                
+                       
+                                
+                            }
+                            .currentS h4{
+                               font-size: 15px;
+                               margin: 15px;
+                               color: #FFF;
+                              
+                            }
+                          
+
+
+                        .btnGame{
+                                display: flex;
+                                gap: 2rem;
+                                flex-direction: column;
+                                justify-content: center;
+                                text-align: center;
+                        }
+                                .roll-dice{
+                                    display:flex;
+                                    flex-direction: row;
+                                    gap: 10px;
+                                    align-items: center;
+                                    
+                                }
+
+                                        .roll-dice button {
+                                            background-color:#3e54ac9c;
+                                            padding: 8px;
+                                            border: none;
+                                            border-radius: 10px;
+                                            font-weight: bold;
+                                            font-size: 15px;
+                                            color: white;
+                                            cursor: pointer;
+                                            
+                                        }
+
+                                        .roll-dice button:hover{
+                                            background-color:white;
+                                            color:#3e54ac9c;
+                                        }
+                                        .roll-dice img{
+                                            width: 20px;
+                                            height: 20px;
+                                            user-select: none;
+                                            cursor: pointer;
+                                        }
+
+
+
+                                .hold{
+                                    display:flex;
+                                    flex-direction: row;
+                                    gap: 15px;
+                                   
+
+                                }
+                                        .hold img{
+                                            width: 20px;
+                                            height: 20px;
+                                         cursor: pointer;
+                                         align-self: center;
+
+                                        }                  
+                                        
+                                .holdBtn{
+                                    background-color:#3e54ac9c;
+                                    padding: 8px;
+                                    border: none;
+                                    border-radius: 10px;
+                                    font-weight: bold;
+                                    font-size: 15px;
+                                    color: white;
+                                    cursor: pointer;
+                                    
+                                }
+                                    .holdBtn:hover{
+                                        background-color:white;
+                                        color:#3e54ac9c;
+                                    }
+
+                                footer{
+                                    display: flex;
+                                 
+                                    justify-content: flex-end;
+                                  
+                                }
+                                .songBtn{
+                                    margin: 15px;
+                                    justify-self: flex-end;
+                                    cursor: pointer;
+                                    box-shadow: 0px 7px 141px 8px rgba(64,64,64,0.75);
+                                    background-color: #FFFF;
+                                    border-radius: 5px;
+                                    max-width: 30px;
+                                    max-height: 30px;
+                                  
+                                    
+                                 
+                                }
+                                .songBtn:hover{
+                                    background-color: #3E54AC;
+                                }
+                                .songBtn img{
+                                    max-width: 30px;
+                                    max-height: 30px;
+                                }
+                                
+                                /*---------------------POP CONTAINER-----------------------*/
+
+
+                                #popContainer {
+                                    visibility:visible;
+                                    display: flex;
+                                    justify-content: center;
+                                    flex-direction: column;
+                                    text-align: center;
+                                    width: 400px;
+                                    height: 400px;
+                                    background-color: #3E54AC;
+                                    position: absolute;
+                                    top: 15vh;
+                                    left: 40vw;
+                                    border-radius:30px ;
+                                    font-size: 15px;
+                                    font-weight: bolder;
+                                    letter-spacing: 1.5px;
+                                    color: #FFFF;
+                                    opacity:0.95;
+                                    box-shadow: 12px -5px 15px 5px #80C7FF, -10px -7px 27px 1px #8E5CFF, 6px 50px 46px 50px rgba(236,242,255,0.69);
+                                }   
+
+                                #popContainer h3{
+                                    margin: 8px;
+                                    font-size: 25px;
+                                    font-weight: bolder;
+
+                                }
+                                .endBox button{
+                                    margin: 15px;
+                                    justify-self: center;
+                                    text-align: center;
+                                    padding: 15px;
+                                    background-color:#5D9C59 ;
+                                    color: #FFF;
+                                    font-weight: bold;
+                                    max-width: 40px;
+                                    max-width: 100px;
+                                    font-weight: 900;
+                                    border-radius: 10px;
+                                    max-height: 45px;
+                                    border: none;
+                                    
+                                 
+                                }
+                                #popContainer button:hover{
+                                    font-weight: 1000;
+                                    padding: 13px;
+                                    cursor: pointer;
+                                }
+                                .musicPopBtn{
+                                  margin: 15px;
+                                  color: #FFF;
+                                 
+                                }
+
+                                .musicPopBtn button{
+                                    border: none;
+                                    padding: 15px;
+                                   font-family:'Josefin Sans', sans-serif;
+                                   background-color: #FFF;
+                                   color: #3E54AC;
+                                   font-weight:bold;
+                                   border-radius: 10px;
+                                   max-width: 100px;
+                                }
+
+                                .musicPopBtn button:hover{
+                                    padding: 13px;
+                                    background-color: #3E54AC;
+                                    border-width: 1.5px;
+                                    border-style:solid;
+                                    border-color: #FFF;
+                                    color: #FFF;
+                                    cursor: pointer;
+                                }
+                                    .musicPopBtn h4{
+                                        margin: 15px;
+                                    
+                                    }
+  
+
+                               
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                /*----------------------------RESPONSIVE BLOC---------------*/
+                                @media  (max-width: 700px){
+
+
+                                    body{
+                                     
+                                        max-width: 100vw;
+                                        max-height: 80vh;
+
+                                    }
+
+                                    
+
+                                                header{ 
+                                                    display: grid;
+                                                    grid-template-rows:30px 40px 2fr;
+                                                    row-gap: 1rem;
+                                                
+
+                                                }
+                                    .songBtn img{
+                                        max-width: 20px;
+                                        max-height: 30px;
+                                    }
+                                    .songBtn{
+                                        justify-self: end;
+                                        min-width: 30px;
+                                        min-height: 30px;
+                                        align-self: center;
+                                        padding-left:10px;
+                                        padding-top: 10px;
+                                        margin-left: 10px;
+                                        margin-top: 3rem;
+                                    }
+                                        
+                                            .scorePlayer-container{
+                                                display: flex;
+                                                justify-content: space-evenly;
+                                                margin: 0;
+                                                padding: 0;
+                                                font-size: smaller;
+                                                padding-top:10px;
+                                            }
+
+                                            .Dimage img{
+                                             
+                                                 max-width: 80px;
+                                                 height:90px;
+                                                
+                                              }
+                                                    .currentGame_main{
+                                                        padding-top: 1rem;
+                                                        font-size: smaller;
+
+
+                                                    }
+                                }
+                                .return{
+                                display: flex;
+                                 margin: 3rem;
+                                justify-content: flex-end;
+
+                                }
+                                .homeBtn{
+                                    border: none;
+                                    padding: 15px;
+                                   font-family:'Josefin Sans', sans-serif;
+                                   background-color: #FFF;
+                                   color: #3E54AC;
+                                   font-weight:bold;
+                                   border-radius: 10px;
+                                   max-width: 100px;
+                                  
+                                }
+                                .homeBtn a{
+                                    color:#3E54AC ;
+                                    text-decoration: none;
+                                }
+                                .homeBtn a:hover{
+                                    color:#FFF ;
+                                    text-decoration: none;
+                                }
+                                .homeBtn:hover{
+                                    padding: 13px;
+                                    background-color: #3E54AC;
+                                    border-width: 1.5px;
+                                    border-style:solid;
+                                    border-color: #FFF;
+                                    color: #FFF;
+                                    cursor: pointer;
+                                }
