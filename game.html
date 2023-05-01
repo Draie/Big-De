@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="IMG\FAV ICON\favicon-32x32.png">
+    <link rel="stylesheet" href="Style\style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@600&display=swap" rel="stylesheet">
+    <script src="Script\script.js"></script>
+    <script src="Script\De_Tools.js"></script>
+    <script src="Script\game.js"></script>
+    <link rel="icon" type="image/png" sizes="192x192" href="IMG\FAV ICON\favicon.ico">
+    <!--    --> 
+     
+      <script>
+        setUser();
+           
+      </script>
+    <title>Big Dé</title>
+</head>
+<body>
+        <header >
+            <div class="songBtn" >
+                <img src="IMG\icons8-musical-notes-90-removebg-preview.png" onclick="playSound()"alt="add sound">
+            </div>
+            
+            
+            
+        <div id="newGameTittle" >
+            <img src="IMG\newGame-btn.png"alt="NEW GAME"  onclick="gameOutSound()">
+            <h3  id="newGame-btn" onclick="gameOutSound()">NEW GAME </h3 >
+  
+        </div>
+                  
+
+
+   
+                
+
+            <div class="playerTittle" >
+                
+                                <div>
+                                    <p  id="playerOne" ><img  id="StatusIcon1"src="IMG\InProgressBtn (2).png">PLAYER 1 
+                                        
+                                        <div id="Username1">
+                                           
+                                            <p class="userS">
+                                                <script >
+                                                 let dusername1 =localStorage.getItem(1);
+                                                 document.open();
+                                                 document.write(dusername1);
+                                                 document.close();
+                                                </script>
+                                                </p>
+                                              
+                                        </div>
+                                      
+                                    </p> 
+                                </div>
+                               
+                                    
+                                <div>
+                                <p id="playerTwo"><img  id="StatusIcon2"src="IMG\InProgressBtn (2).png">PLAYER 2
+                            
+                                        <p class="userS">
+                                        <script >
+                                         let dusername2 =localStorage.getItem(2);
+                                         document.open();
+                                         document.write(dusername2);
+                                         document.close();
+                                        </script>
+                                        </p>
+                                </p>
+                            </div>
+
+                              
+                               
+                                
+
+            </div>
+            
+        </header>
+
+        <main>
+           
+              <!--
+
+
+                PARTIE DU CODE : SCORE GLOBALE
+            -->
+
+        <div class="scorePlayer-container">
+                    <div class="holdS"id="HoldscorePlayer1" >
+                       
+                        <p>0</p>
+                    </div>
+
+                    <div class="Dimage">
+                
+                        <img  id ='bigD' src="IMG\Dimg\7.png" alt="Dé a lancer" width="100" height="100">
+                     
+                                
+                                 
+                            
+                        
+                    </div>
+                
+                
+           
+                        <div class="holdS"id="HoldscorePlayer2" >
+                            <p>0</p>
+                     
+                        </div>
+
+
+            </div>
+           
+           
+
+
+
+            <!--
+
+
+                PARTIE DU CODE : SCORE EN COURS
+            -->
+                        
+
+
+
+                        <div class="currentGame_main">
+
+
+                          <div class="currentS"id="currentScorePlayer1">
+                           
+                             <h4>CURRENT</h4>
+                             <div  id="scorePlayer1">
+                                <p>0</p>
+                            </div>
+                        </div>
+
+                                                    <div  class="btnGame">
+                                               
+
+                                                        <div class="roll-dice" >
+                                                 
+
+                                                            <img src="IMG\refresh.png"alt="reresh"  onclick =Deplay()>
+                                                            <button class="RunDice"onclick =Deplay() >ROLL DICE</button>
+                                                               
+                                                                                                                       
+                                                        </div>
+                                        
+                                                        <div class="hold" id="hold">
+                                                            <img src="IMG\inbox-in.png" alt="sauvegarde" onclick = HoldCurrentScore()>
+                                                           
+                                                            <button class="holdBtn"onclick = HoldCurrentScore() >HOLD</button>
+                                                        </div>
+                                                    </div>
+                
+                         
+                                    
+                            
+                            <div class="currentS"id="currentScorePlayer2">
+                                
+                            <h4 >CURRENT</h4>
+
+                            <div  id="scorePlayer2"><p>0</p></div>
+                          
+                             </div>
+                            </div>
+
+                        
+                  
+                            
+                       
+        </main>
+        </div>       
+
+                    
+       
+              <div id="popContainer">  
+                    <h3>Hey!
+                    <script >
+                        let pusername1 =localStorage.getItem(1);
+                        document.open();
+                        document.write(dusername1);
+                       document.close();
+                       </script>
+                        <br>
+                        <h3>et</h3>
+                        <h3>
+                        <script >
+                        let pusername2 =localStorage.getItem(2);
+                        document.open();
+                        document.write(dusername2);
+                        document.close();
+                        </script>
+                       </h3>
+                    <div class="musicPopBtn">
+                    <h4 class="coloredPop">Tu peut ajouter du son ! </h4>
+                    <button onclick="playSound()"> open | off</button>
+                    </div>
+                    <div class="endBox">
+                        <p>Amusé vous bien !</p>
+                        <button onclick="WpopSet()">OK, Merci</button>
+                    </div>
+                   
+
+
+                
+              </div>
+
+        <!--
+
+            CODE A INSERER:
+        -->
+            <div class="return">
+                <button class="homeBtn" ><a href="Source\index.html">Home</a></button>
+            </div>
+                
+
+     <footer>
+
+     </footer>
+</body>
+
+</div>
+
+
+
+</html>
+
+ 
