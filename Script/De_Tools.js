@@ -75,7 +75,7 @@ function playSound()
 
     if (soundvalue==false)
 {
- audio= new Audio("C:\/Users\/Audrey\/OneDrive\/Personnel\/ORDI PORTABLE\/STUDI\/SITE\/jeu\/jeu-de-d\/Sound\/gameshowSound.mp3");
+ audio= new Audio("Sound\/gameshowSound.mp3");
  audio.loop=true;
  audio.volume=0.1;
  audio.play()
@@ -92,7 +92,7 @@ else if (soundvalue == true){
 
 function validationSound(){
 
- audioV= new Audio("C:\/Users\/Audrey\/OneDrive\/Personnel\/ORDI PORTABLE\/STUDI\/SITE\/jeu\/jeu-de-d\/Sound\/validationSound.mp3");
+ audioV= new Audio("Sound\/validationSound.mp3");
     audioV.volume=0.1;
  audioV.loop=false;
  audioV.play()
@@ -104,7 +104,7 @@ function validationSound(){
 }
 function saveSound(){
 
-        audioS= new Audio("C:\/Users\/Audrey\/OneDrive\/Personnel\/ORDI PORTABLE\/STUDI\/SITE\/jeu\/jeu-de-d\/Sound\/savesound.mp3");
+        audioS= new Audio("Sound\/savesound.mp3");
            audioS.volume=0.1;
         audioS.loop=false;
         audioS.play()
@@ -115,7 +115,7 @@ function saveSound(){
 
        function gameOutSound(){
 
-        audioG= new Audio("C:\/Users\/Audrey\/OneDrive\/Personnel\/ORDI PORTABLE\/STUDI\/SITE\/jeu\/jeu-de-d\/Sound\/gameoverSound.mp3");
+        audioG= new Audio("Sound\/gameoverSound.mp3");
     
         audioG.loop=false;
         audioG.play()
@@ -219,13 +219,13 @@ let maxNumber = 6 ; // The maximum number you want
 
 // BASE DE DONNEE DES DEE DISPONIBLE//
             var DeStyle= [
-                "C:\/Users\/Audrey\/OneDrive\/Personnel\/ORDI PORTABLE\/STUDI\/SITE\/jeu\/jeu-de-d\/IMG\/Dimg\/7.png",
-                "C:\/Users\/Audrey\/OneDrive\/Personnel\/ORDI PORTABLE\/STUDI\/SITE\/jeu\/jeu-de-d\/IMG\/Dimg\/1.png", 
-            "C:\/Users\/Audrey\/OneDrive\/Personnel\/ORDI PORTABLE\/STUDI\/SITE\/jeu\/jeu-de-d\/IMG\/Dimg\/2.png",
-            "C:\/Users\/Audrey\/OneDrive\/Personnel\/ORDI PORTABLE\/STUDI\/SITE\/jeu\/jeu-de-d\/IMG\/Dimg\/3.png",
-            "C:\/Users\//Audrey\/OneDrive\/Personnel\/ORDI PORTABLE\/STUDI\/SITE\/jeu\/jeu-de-d\/IMG\/Dimg\/4.png",
-            "C:\/Users\/Audrey\/OneDrive\/Personnel\/ORDI PORTABLE\/STUDI\/SITE\/jeu\/jeu-de-d\/IMG\/Dimg\/5.png",
-            "C:\/Users\/Audrey\/OneDrive\/Personnel\/ORDI PORTABLE\/STUDI\/SITE\/jeu\/jeu-de-d\/IMG\/Dimg\/6.png",
+                "IMG\/Dimg\/7.png",
+                "IMG\/Dimg\/1.png", 
+            "IMG\/Dimg\/2.png",
+            "IMG\/Dimg\/3.png",
+            "IMG\/Dimg\/4.png",
+            "MG\/Dimg\/5.png",
+            "IMG\/Dimg\/6.png",
             ];
 
 
